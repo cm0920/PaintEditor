@@ -6,6 +6,8 @@ import java.awt.*;
 
 public class PaintEditor extends JFrame {
     //variables
+    private static int brushSize;
+    private static Color color;
 
 
     PaintEditor(){
@@ -22,9 +24,23 @@ public class PaintEditor extends JFrame {
     }
 
     private void initGUI(){
+
+        //Two main panels
         JPanel drawingPanel = new JPanel();
         JPanel buttonPanel = new JPanel();
+
+        //Radio Buttons Setup
+        JRadioButtonMenuItem menu = new JRadioButtonMenuItem();
+        JRadioButton small = new JRadioButton();
+        JRadioButton medium = new JRadioButton();
+        JRadioButton large = new JRadioButton();
+
         getContentPane().add(drawingPanel, BorderLayout.NORTH);
+        getContentPane().add(buttonPanel, BorderLayout.SOUTH);
+
+
+
+
     }
 
     public static void main(String[] args){
